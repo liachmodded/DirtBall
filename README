@@ -1,0 +1,39 @@
+DirtBall
+
+ - The eighth deadly sin is: to implement Bukkit & Spigot on top of Sponge.
+
+ - How so? 
+
+ - Put in this way, Bukkit cares about backward compatibility. Therefore it cannot drop deprecated things
+   on the fly. While sure SpongeAPI strictly uses SemVer, it is still in *beta* so who the hell knows what
+   will be there in the next bump of major version.
+   Also, they don't share the same design philosophy. Think about `DataManipolator`: does Bukkit has that
+   sort of thing?
+   
+   Ideally, SpongeAPI would replace Bukkit in the unforeseenable future, but we all knows that it would 
+   NOT be true in next six months.
+
+ - So what's the deal?
+   
+   There has been attempts on implementing Bukkit on top of SpongeAPI, but they are discontinued.
+   And now you are about to kickstart this drama again.
+
+ - No, I am not going to kickstart this drama. I want to witness the history.
+   We have seen the course of history of Minecraft. Risugami. MCPC, I mean the one without "plus". Fall of
+   CraftBukkit. Spongie's struggle. 
+   Those awesome and diligent people have overcome so many challenges. But generally speaking -
+
+   History is fading.
+      People joining.
+      People leaving.
+   ...
+
+ - Left everything?
+
+ - ...  Paralyzing. I want to to see what history will choose. And kickstart the progression when necessary.
+
+ - I see. Farewell, the witness in the dark. New year is almost here.
+
+ - Yeah. New year. The promised day. Farewell, my counterpart from the shadow.
+
+

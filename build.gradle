@@ -1,0 +1,40 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+archivesBaseName = "DirtBall"
+group = "info.tritusk.dirtball"
+version = "0.0.0"
+description = "The eighth deadly sin: run Bukkit/Spigot plugins on SpongeAPI"
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+    maven {
+        name "spigot"
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+    }
+    maven {
+        name "sponge"
+        url "https://repo.spongepowered.org/maven"
+    }
+    maven {
+        name "sonatype" // BunngeCord requires this
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    compile group: "org.spigotmc", name: "spigot-api", version: "1.12.2-R0.1-SNAPSHOT"
+    compile group: "org.spongepowered", name: "spongeapi", version: "7.0.0-SNAPSHOT"
+}
+
+javadoc {
+    options {
+        links += "https://docs.oracle.com/javase/8/docs/api/"
+        links += "https://jd.spongepowered.org/6.0.0/"
+        links += "https://hub.spigotmc.org/javadocs/bukkit/"
+        tags += "implNote:a:Implementation Note:"
+        tags += "implSpec:a:Implementation Requirements:"
+    }
+}
