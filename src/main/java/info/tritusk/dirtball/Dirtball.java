@@ -26,7 +26,7 @@ import org.spongepowered.api.plugin.Plugin;
  * </p>
  * <p>
  * And here, is the entry class of Sponge plugin "DirtBall", a standalone implementation
- * of BukkitAPI.
+ * of BukkitAPI, experimental usage only.
  * <br>
  * The {@linkplain org.bukkit.Server Bukkit Server} instance, which is a
  * wrapper of the {@linkplain org.spongepowered.api.Server Sponge Server} instance,
@@ -41,7 +41,7 @@ import org.spongepowered.api.plugin.Plugin;
         authors = {"3TUSK", "ustc-zzzz"}) // Note: zzzz only serves as consultant
 public final class Dirtball {
 
-//    public static DirtballPlatform platform;
+    public static DirtballPlatform platform;
 
     @Inject
     public void injectLogger(Logger logger) {
